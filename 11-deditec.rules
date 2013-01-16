@@ -1,0 +1,4 @@
+
+# /etc/udev/rules.d/10-deditec.rules
+
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="0403", ATTR{idProduct}=="6001", ATTR{manufacturer}=="DEDITEC", MODE:="0666"
